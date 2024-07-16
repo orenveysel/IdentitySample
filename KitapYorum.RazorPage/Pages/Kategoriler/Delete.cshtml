@@ -1,0 +1,40 @@
+﻿@page
+@model KitapYorum.RazorPage.Pages.Kategoriler.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Kategori</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategori.KategoriAdi)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategori.KategoriAdi)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategori.CreateDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategori.CreateDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategori.MyUser)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategori.MyUser.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Kategori.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

@@ -1,0 +1,48 @@
+﻿@page
+@model KitapYorum.RazorPage.Pages.Kategoriler.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Kategori[0].KategoriAdi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kategori[0].CreateDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kategori[0].MyUser)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Kategori) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KategoriAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyUser.Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

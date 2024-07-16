@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35017.193
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityRazorPage", "IdentityRazorPage\IdentityRazorPage.csproj", "{19F4EB69-6F68-44FB-8C60-2B63A69AB03B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitapYorum.RazorPage", "KitapYorum.RazorPage\KitapYorum.RazorPage.csproj", "{C72F0508-3B12-497A-B29C-CD0BA4AEF94C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitapYorum.Entites", "KitapYorum.Entites\KitapYorum.Entites.csproj", "{0BE56B44-2D37-4313-B442-D82B02E0C1B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitapYorum.DAL", "KitapYorum.DAL\KitapYorum.DAL.csproj", "{5C23C6E1-939A-4085-AEA9-2B9CB008823F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KtapYorum.TestConsole", "KtapYorum.TestConsole\KtapYorum.TestConsole.csproj", "{54182A70-15BE-4BB2-80BE-FBA2C12E7C03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KitapYorum.BL", "KitapYorum.BL\KitapYorum.BL.csproj", "{EA555918-C21A-42BF-9DB5-D4908D2A5133}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19F4EB69-6F68-44FB-8C60-2B63A69AB03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19F4EB69-6F68-44FB-8C60-2B63A69AB03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19F4EB69-6F68-44FB-8C60-2B63A69AB03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19F4EB69-6F68-44FB-8C60-2B63A69AB03B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C72F0508-3B12-497A-B29C-CD0BA4AEF94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C72F0508-3B12-497A-B29C-CD0BA4AEF94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C72F0508-3B12-497A-B29C-CD0BA4AEF94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C72F0508-3B12-497A-B29C-CD0BA4AEF94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BE56B44-2D37-4313-B442-D82B02E0C1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BE56B44-2D37-4313-B442-D82B02E0C1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BE56B44-2D37-4313-B442-D82B02E0C1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BE56B44-2D37-4313-B442-D82B02E0C1B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C23C6E1-939A-4085-AEA9-2B9CB008823F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C23C6E1-939A-4085-AEA9-2B9CB008823F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C23C6E1-939A-4085-AEA9-2B9CB008823F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C23C6E1-939A-4085-AEA9-2B9CB008823F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54182A70-15BE-4BB2-80BE-FBA2C12E7C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54182A70-15BE-4BB2-80BE-FBA2C12E7C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54182A70-15BE-4BB2-80BE-FBA2C12E7C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54182A70-15BE-4BB2-80BE-FBA2C12E7C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA555918-C21A-42BF-9DB5-D4908D2A5133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA555918-C21A-42BF-9DB5-D4908D2A5133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA555918-C21A-42BF-9DB5-D4908D2A5133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA555918-C21A-42BF-9DB5-D4908D2A5133}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E792CA1-3697-4D66-95FE-5E103819E3BF}
+	EndGlobalSection
+EndGlobal

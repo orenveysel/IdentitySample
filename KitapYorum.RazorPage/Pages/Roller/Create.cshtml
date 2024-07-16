@@ -1,0 +1,13 @@
+﻿@page
+@model KitapYorum.RazorPage.Pages.Roller.CreateModel
+@{
+}
+
+<form method="post">
+
+    <label asp-for="@Model.Role.Name">Name</label>
+    <input asp-for="@Model.Role.Name" />
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+    <a  asp-page="Index" class="btn btn-primary">Listeye Geri Dön</a>
+
+</form>

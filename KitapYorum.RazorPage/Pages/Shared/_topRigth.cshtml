@@ -1,0 +1,41 @@
+﻿@using System.Security.Claims
+
+<div class="right-element">
+
+@if (User.Identity.IsAuthenticated)
+{
+
+		<a asp-page="/Account/Edit" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)" class="user-account for-buy">
+					<i class="icon icon-user"></i><span>Hosgeldiniz @User.Identity.Name</span>
+				</a>
+	
+		@* <a  asp-page="/Users/Edit" asp-route-id="@User.FindFirstValue(ClaimTypes.NameIdentifier)" class="user-account for-buy">
+				<i class="icon icon-user"></i><span>Hosgeldiniz @User.Identity.Name</span>
+			</a> *@
+		<a asp-page="/Account/Logout" class="cart for-buy">
+			<i class="fa fa-sign-out"></i>Logout
+		</a>
+}
+else
+{
+		<a  asp-page="/Account/Login" class="user-account for-buy">
+			<i class="icon icon-user"></i><span>Login</span>
+		</a>
+}
+	
+	
+
+	<div class="action-menu">
+
+		<div class="search-bar">
+			<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+				<i class="icon icon-search"></i>
+			</a>
+			<form role="search" method="get" class="search-box">
+				<input class="search-field text search-input" placeholder="Search"
+					   type="search">
+			</form>
+		</div>
+	</div>
+
+</div><!--top-right-->
